@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14111"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Full_Screen_Clock" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,7 +690,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
@@ -703,15 +705,82 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Full_Screen_Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="109"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" placeholderIntrinsicWidth="444" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="bcW-4w-HUc" customClass="ResizingLabel" customModule="Full_Screen_Clock" customModuleProvider="target">
+                                <rect key="frame" x="18" y="49" width="444" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HU8-tt-Rtb"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="Label" drawsBackground="YES" usesSingleLineMode="YES" id="VNW-Rw-TyD">
+                                    <dateFormatter key="formatter" formatterBehavior="custom10_4" timeStyle="medium" dateFormat="HH:mm:ssZ" id="Vmd-bx-Udp"/>
+                                    <font key="font" size="30" name=".AppleSystemUIFontMedium"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BHW-rc-O9b">
+                                <rect key="frame" x="18" y="18" width="85" height="18"/>
+                                <buttonCell key="cell" type="check" title="Tick every" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Qvt-zd-AOd">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="dw1-Pg-DBe" name="value" keyPath="values.shouldTick" id="b9N-Pa-RRf"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rut-Lc-9UJ">
+                                <rect key="frame" x="109" y="16" width="26" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="N7Y-dC-Ktf"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="10I-rq-UeA">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="Iv4-qp-qsE">
+                                        <real key="minimum" value="1"/>
+                                    </numberFormatter>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="dw1-Pg-DBe" name="value" keyPath="values.tickInterval" id="pVx-zW-DHK"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GRk-ac-lRI">
+                                <rect key="frame" x="141" y="19" width="56" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="up0-gp-v6j">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rut-Lc-9UJ" firstAttribute="leading" secondItem="BHW-rc-O9b" secondAttribute="trailing" constant="8" symbolic="YES" id="8b2-X8-skt"/>
+                            <constraint firstItem="rut-Lc-9UJ" firstAttribute="baseline" secondItem="GRk-ac-lRI" secondAttribute="baseline" id="CFl-Nx-YZx"/>
+                            <constraint firstAttribute="trailing" secondItem="bcW-4w-HUc" secondAttribute="trailing" constant="18" id="H8R-Pb-9jy"/>
+                            <constraint firstAttribute="bottom" secondItem="BHW-rc-O9b" secondAttribute="bottom" constant="20" symbolic="YES" id="KNG-7P-GjI"/>
+                            <constraint firstItem="bcW-4w-HUc" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="TNH-uy-PSu"/>
+                            <constraint firstItem="BHW-rc-O9b" firstAttribute="baseline" secondItem="rut-Lc-9UJ" secondAttribute="baseline" id="aHm-SQ-aOL"/>
+                            <constraint firstItem="GRk-ac-lRI" firstAttribute="leading" secondItem="rut-Lc-9UJ" secondAttribute="trailing" constant="8" symbolic="YES" id="e5t-mz-r3R"/>
+                            <constraint firstItem="BHW-rc-O9b" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="h8N-qE-gu2"/>
+                            <constraint firstItem="bcW-4w-HUc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="18" id="jYG-Xl-W1D"/>
+                            <constraint firstItem="rut-Lc-9UJ" firstAttribute="top" secondItem="bcW-4w-HUc" secondAttribute="bottom" constant="11" id="nrz-QJ-f9p"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GRk-ac-lRI" secondAttribute="trailing" constant="20" symbolic="YES" id="oMS-gb-ETG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clockLabel" destination="bcW-4w-HUc" id="1fx-6E-aHh"/>
+                        <outlet property="tickIntervalFormatter" destination="Iv4-qp-qsE" id="xa4-L0-0Go"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="dw1-Pg-DBe"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="680.5"/>
         </scene>
     </scenes>
 </document>

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B3253FC2076DA7700C68AA8 /* 250551__druminfected__metronomeup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FA2076DA7600C68AA8 /* 250551__druminfected__metronomeup.wav */; };
+		2B3253FD2076DA7700C68AA8 /* 417792__lorenzothegreat__menu-tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FB2076DA7600C68AA8 /* 417792__lorenzothegreat__menu-tick.wav */; };
+		2B3253FF2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */; };
 		2BCD0B602075E1B700EED20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B5F2075E1B700EED20D /* AppDelegate.swift */; };
 		2BCD0B622075E1B700EED20D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B612075E1B700EED20D /* ViewController.swift */; };
 		2BCD0B642075E1BA00EED20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCD0B632075E1BA00EED20D /* Assets.xcassets */; };
 		2BCD0B672075E1BA00EED20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCD0B652075E1BA00EED20D /* Main.storyboard */; };
 		2BCD0B732075E1BA00EED20D /* Full_Screen_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B722075E1BA00EED20D /* Full_Screen_ClockTests.swift */; };
 		2BCD0B7E2075E1BA00EED20D /* Full_Screen_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B7D2075E1BA00EED20D /* Full_Screen_ClockUITests.swift */; };
+		2BCD0B8C2075E49F00EED20D /* ResizingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B8B2075E49F00EED20D /* ResizingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,19 +37,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B3253C0207698C600C68AA8 /* Full Screen Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Full Screen Clock.entitlements"; sourceTree = "<group>"; };
+		2B3253FA2076DA7600C68AA8 /* 250551__druminfected__metronomeup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 250551__druminfected__metronomeup.wav; sourceTree = "<group>"; };
+		2B3253FB2076DA7600C68AA8 /* 417792__lorenzothegreat__menu-tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "417792__lorenzothegreat__menu-tick.wav"; sourceTree = "<group>"; };
+		2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "243748__unfa__metronome-2khz-strong-pulse.mp3"; sourceTree = "<group>"; };
 		2BCD0B5C2075E1B700EED20D /* Full Screen Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Full Screen Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCD0B5F2075E1B700EED20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCD0B612075E1B700EED20D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BCD0B632075E1BA00EED20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BCD0B662075E1BA00EED20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BCD0B682075E1BA00EED20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BCD0B692075E1BA00EED20D /* Full_Screen_Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Full_Screen_Clock.entitlements; sourceTree = "<group>"; };
 		2BCD0B6E2075E1BA00EED20D /* Full Screen ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Full Screen ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCD0B722075E1BA00EED20D /* Full_Screen_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Full_Screen_ClockTests.swift; sourceTree = "<group>"; };
 		2BCD0B742075E1BA00EED20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCD0B792075E1BA00EED20D /* Full Screen ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Full Screen ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCD0B7D2075E1BA00EED20D /* Full_Screen_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Full_Screen_ClockUITests.swift; sourceTree = "<group>"; };
 		2BCD0B7F2075E1BA00EED20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCD0B8B2075E49F00EED20D /* ResizingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +104,16 @@
 		2BCD0B5E2075E1B700EED20D /* Full Screen Clock */ = {
 			isa = PBXGroup;
 			children = (
+				2B3253C0207698C600C68AA8 /* Full Screen Clock.entitlements */,
 				2BCD0B5F2075E1B700EED20D /* AppDelegate.swift */,
 				2BCD0B612075E1B700EED20D /* ViewController.swift */,
 				2BCD0B632075E1BA00EED20D /* Assets.xcassets */,
 				2BCD0B652075E1BA00EED20D /* Main.storyboard */,
+				2BCD0B8B2075E49F00EED20D /* ResizingLabel.swift */,
+				2B3253FA2076DA7600C68AA8 /* 250551__druminfected__metronomeup.wav */,
+				2B3253FB2076DA7600C68AA8 /* 417792__lorenzothegreat__menu-tick.wav */,
+				2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */,
 				2BCD0B682075E1BA00EED20D /* Info.plist */,
-				2BCD0B692075E1BA00EED20D /* Full_Screen_Clock.entitlements */,
 			);
 			path = "Full Screen Clock";
 			sourceTree = "<group>";
@@ -192,6 +204,11 @@
 				TargetAttributes = {
 					2BCD0B5B2075E1B700EED20D = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					2BCD0B6D2075E1BA00EED20D = {
 						CreatedOnToolsVersion = 9.4;
@@ -230,6 +247,9 @@
 			files = (
 				2BCD0B642075E1BA00EED20D /* Assets.xcassets in Resources */,
 				2BCD0B672075E1BA00EED20D /* Main.storyboard in Resources */,
+				2B3253FF2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 in Resources */,
+				2B3253FD2076DA7700C68AA8 /* 417792__lorenzothegreat__menu-tick.wav in Resources */,
+				2B3253FC2076DA7700C68AA8 /* 250551__druminfected__metronomeup.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +276,7 @@
 			files = (
 				2BCD0B622075E1B700EED20D /* ViewController.swift in Sources */,
 				2BCD0B602075E1B700EED20D /* AppDelegate.swift in Sources */,
+				2BCD0B8C2075E49F00EED20D /* ResizingLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Full Screen Clock/Full_Screen_Clock.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Full Screen Clock/Full Screen Clock.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TW8SJXYFP5;
@@ -428,6 +449,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Full-Screen-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -438,7 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Full Screen Clock/Full_Screen_Clock.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Full Screen Clock/Full Screen Clock.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TW8SJXYFP5;
@@ -447,6 +469,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Full-Screen-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
