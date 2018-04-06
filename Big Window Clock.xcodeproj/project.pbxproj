@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B3253FC2076DA7700C68AA8 /* 250551__druminfected__metronomeup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FA2076DA7600C68AA8 /* 250551__druminfected__metronomeup.wav */; };
-		2B3253FD2076DA7700C68AA8 /* 417792__lorenzothegreat__menu-tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FB2076DA7600C68AA8 /* 417792__lorenzothegreat__menu-tick.wav */; };
 		2B3253FF2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */; };
+		2B3254052076F40A00C68AA8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2B3254042076F40A00C68AA8 /* Credits.rtf */; };
 		2BCD0B602075E1B700EED20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B5F2075E1B700EED20D /* AppDelegate.swift */; };
 		2BCD0B622075E1B700EED20D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B612075E1B700EED20D /* ViewController.swift */; };
 		2BCD0B642075E1BA00EED20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCD0B632075E1BA00EED20D /* Assets.xcassets */; };
@@ -38,19 +37,18 @@
 
 /* Begin PBXFileReference section */
 		2B3253C0207698C600C68AA8 /* Full Screen Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Full Screen Clock.entitlements"; sourceTree = "<group>"; };
-		2B3253FA2076DA7600C68AA8 /* 250551__druminfected__metronomeup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 250551__druminfected__metronomeup.wav; sourceTree = "<group>"; };
-		2B3253FB2076DA7600C68AA8 /* 417792__lorenzothegreat__menu-tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "417792__lorenzothegreat__menu-tick.wav"; sourceTree = "<group>"; };
 		2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "243748__unfa__metronome-2khz-strong-pulse.mp3"; sourceTree = "<group>"; };
-		2BCD0B5C2075E1B700EED20D /* Full Screen Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Full Screen Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3254042076F40A00C68AA8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		2BCD0B5C2075E1B700EED20D /* Big Window Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Window Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCD0B5F2075E1B700EED20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCD0B612075E1B700EED20D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BCD0B632075E1BA00EED20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BCD0B662075E1BA00EED20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BCD0B682075E1BA00EED20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BCD0B6E2075E1BA00EED20D /* Full Screen ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Full Screen ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCD0B6E2075E1BA00EED20D /* Big Window ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Window ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCD0B722075E1BA00EED20D /* Full_Screen_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Full_Screen_ClockTests.swift; sourceTree = "<group>"; };
 		2BCD0B742075E1BA00EED20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BCD0B792075E1BA00EED20D /* Full Screen ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Full Screen ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCD0B792075E1BA00EED20D /* Big Window ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Window ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCD0B7D2075E1BA00EED20D /* Full_Screen_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Full_Screen_ClockUITests.swift; sourceTree = "<group>"; };
 		2BCD0B7F2075E1BA00EED20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCD0B8B2075E49F00EED20D /* ResizingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingLabel.swift; sourceTree = "<group>"; };
@@ -94,9 +92,9 @@
 		2BCD0B5D2075E1B700EED20D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BCD0B5C2075E1B700EED20D /* Full Screen Clock.app */,
-				2BCD0B6E2075E1BA00EED20D /* Full Screen ClockTests.xctest */,
-				2BCD0B792075E1BA00EED20D /* Full Screen ClockUITests.xctest */,
+				2BCD0B5C2075E1B700EED20D /* Big Window Clock.app */,
+				2BCD0B6E2075E1BA00EED20D /* Big Window ClockTests.xctest */,
+				2BCD0B792075E1BA00EED20D /* Big Window ClockUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,9 +107,8 @@
 				2BCD0B612075E1B700EED20D /* ViewController.swift */,
 				2BCD0B632075E1BA00EED20D /* Assets.xcassets */,
 				2BCD0B652075E1BA00EED20D /* Main.storyboard */,
+				2B3254042076F40A00C68AA8 /* Credits.rtf */,
 				2BCD0B8B2075E49F00EED20D /* ResizingLabel.swift */,
-				2B3253FA2076DA7600C68AA8 /* 250551__druminfected__metronomeup.wav */,
-				2B3253FB2076DA7600C68AA8 /* 417792__lorenzothegreat__menu-tick.wav */,
 				2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */,
 				2BCD0B682075E1BA00EED20D /* Info.plist */,
 			);
@@ -139,26 +136,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BCD0B5B2075E1B700EED20D /* Full Screen Clock */ = {
+		2BCD0B5B2075E1B700EED20D /* Big Window Clock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BCD0B822075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Full Screen Clock" */;
+			buildConfigurationList = 2BCD0B822075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Big Window Clock" */;
 			buildPhases = (
 				2BCD0B582075E1B700EED20D /* Sources */,
 				2BCD0B592075E1B700EED20D /* Frameworks */,
 				2BCD0B5A2075E1B700EED20D /* Resources */,
+				2B3254062077119C00C68AA8 /* Update Build Number */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Full Screen Clock";
+			name = "Big Window Clock";
 			productName = "Full Screen Clock";
-			productReference = 2BCD0B5C2075E1B700EED20D /* Full Screen Clock.app */;
+			productReference = 2BCD0B5C2075E1B700EED20D /* Big Window Clock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BCD0B6D2075E1BA00EED20D /* Full Screen ClockTests */ = {
+		2BCD0B6D2075E1BA00EED20D /* Big Window ClockTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BCD0B852075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Full Screen ClockTests" */;
+			buildConfigurationList = 2BCD0B852075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Big Window ClockTests" */;
 			buildPhases = (
 				2BCD0B6A2075E1BA00EED20D /* Sources */,
 				2BCD0B6B2075E1BA00EED20D /* Frameworks */,
@@ -169,14 +167,14 @@
 			dependencies = (
 				2BCD0B702075E1BA00EED20D /* PBXTargetDependency */,
 			);
-			name = "Full Screen ClockTests";
+			name = "Big Window ClockTests";
 			productName = "Full Screen ClockTests";
-			productReference = 2BCD0B6E2075E1BA00EED20D /* Full Screen ClockTests.xctest */;
+			productReference = 2BCD0B6E2075E1BA00EED20D /* Big Window ClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2BCD0B782075E1BA00EED20D /* Full Screen ClockUITests */ = {
+		2BCD0B782075E1BA00EED20D /* Big Window ClockUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BCD0B882075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Full Screen ClockUITests" */;
+			buildConfigurationList = 2BCD0B882075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Big Window ClockUITests" */;
 			buildPhases = (
 				2BCD0B752075E1BA00EED20D /* Sources */,
 				2BCD0B762075E1BA00EED20D /* Frameworks */,
@@ -187,9 +185,9 @@
 			dependencies = (
 				2BCD0B7B2075E1BA00EED20D /* PBXTargetDependency */,
 			);
-			name = "Full Screen ClockUITests";
+			name = "Big Window ClockUITests";
 			productName = "Full Screen ClockUITests";
-			productReference = 2BCD0B792075E1BA00EED20D /* Full Screen ClockUITests.xctest */;
+			productReference = 2BCD0B792075E1BA00EED20D /* Big Window ClockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,6 +202,7 @@
 				TargetAttributes = {
 					2BCD0B5B2075E1B700EED20D = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -220,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BCD0B572075E1B700EED20D /* Build configuration list for PBXProject "Full Screen Clock" */;
+			buildConfigurationList = 2BCD0B572075E1B700EED20D /* Build configuration list for PBXProject "Big Window Clock" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BCD0B5B2075E1B700EED20D /* Full Screen Clock */,
-				2BCD0B6D2075E1BA00EED20D /* Full Screen ClockTests */,
-				2BCD0B782075E1BA00EED20D /* Full Screen ClockUITests */,
+				2BCD0B5B2075E1B700EED20D /* Big Window Clock */,
+				2BCD0B6D2075E1BA00EED20D /* Big Window ClockTests */,
+				2BCD0B782075E1BA00EED20D /* Big Window ClockUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,8 +247,7 @@
 				2BCD0B642075E1BA00EED20D /* Assets.xcassets in Resources */,
 				2BCD0B672075E1BA00EED20D /* Main.storyboard in Resources */,
 				2B3253FF2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 in Resources */,
-				2B3253FD2076DA7700C68AA8 /* 417792__lorenzothegreat__menu-tick.wav in Resources */,
-				2B3253FC2076DA7700C68AA8 /* 250551__druminfected__metronomeup.wav in Resources */,
+				2B3254052076F40A00C68AA8 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +266,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B3254062077119C00C68AA8 /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Set the build number to the current git commit count.\n#\n#\n#\n# If we're using the Dev scheme, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n# as described in http://blog.jaredsinclair.com/post/97193356620/the-best-of-all-possible-xcode-automated-build\n#\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all |wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BCD0B582075E1B700EED20D /* Sources */ = {
@@ -301,12 +316,12 @@
 /* Begin PBXTargetDependency section */
 		2BCD0B702075E1BA00EED20D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2BCD0B5B2075E1B700EED20D /* Full Screen Clock */;
+			target = 2BCD0B5B2075E1B700EED20D /* Big Window Clock */;
 			targetProxy = 2BCD0B6F2075E1BA00EED20D /* PBXContainerItemProxy */;
 		};
 		2BCD0B7B2075E1BA00EED20D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2BCD0B5B2075E1B700EED20D /* Full Screen Clock */;
+			target = 2BCD0B5B2075E1B700EED20D /* Big Window Clock */;
 			targetProxy = 2BCD0B7A2075E1BA00EED20D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -450,7 +465,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Full-Screen-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilegeographics.Full-Screen-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -470,7 +485,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Full-Screen-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilegeographics.Full-Screen-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Full-Screen-ClockTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Full Screen Clock.app/Contents/MacOS/Full Screen Clock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Big Window Clock.app/Contents/MacOS/Big Window Clock";
 			};
 			name = Debug;
 		};
@@ -514,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.halmueller.Full-Screen-ClockTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Full Screen Clock.app/Contents/MacOS/Full Screen Clock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Big Window Clock.app/Contents/MacOS/Big Window Clock";
 			};
 			name = Release;
 		};
@@ -561,7 +576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BCD0B572075E1B700EED20D /* Build configuration list for PBXProject "Full Screen Clock" */ = {
+		2BCD0B572075E1B700EED20D /* Build configuration list for PBXProject "Big Window Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BCD0B802075E1BA00EED20D /* Debug */,
@@ -570,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BCD0B822075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Full Screen Clock" */ = {
+		2BCD0B822075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Big Window Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BCD0B832075E1BA00EED20D /* Debug */,
@@ -579,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BCD0B852075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Full Screen ClockTests" */ = {
+		2BCD0B852075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Big Window ClockTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BCD0B862075E1BA00EED20D /* Debug */,
@@ -588,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BCD0B882075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Full Screen ClockUITests" */ = {
+		2BCD0B882075E1BA00EED20D /* Build configuration list for PBXNativeTarget "Big Window ClockUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BCD0B892075E1BA00EED20D /* Debug */,

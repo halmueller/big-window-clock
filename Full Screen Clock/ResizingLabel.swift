@@ -20,12 +20,6 @@ class ResizingLabel: NSTextField {
 		self.sharedInit()
 	}
 
-	override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-
-        // Drawing code here.
-    }
-
 	func sharedInit () {
 		self.postsBoundsChangedNotifications = true
 		self.postsFrameChangedNotifications = true
@@ -36,7 +30,32 @@ class ResizingLabel: NSTextField {
 	}
 
 	@objc func frameChanged(_ notification: Notification) {
-		print(#function)
+		font = maximumSizedFont()
+	}
+
+	func fontTooSmall(string: String, font: NSFont, frameRect: NSRect) -> Bool {
+		let stringSize = string.size(withAttributes: [NSAttributedStringKey.font: font])
+		let tooSmall = stringSize.width < frameRect.width && stringSize.height < frameRect.height
+		return tooSmall
+	}
+
+	func fontTooLarge(string: String, font: NSFont, frameRect: NSRect) -> Bool {
+		let stringSize = string.size(withAttributes: [NSAttributedStringKey.font: font])
+		let tooLarge = stringSize.width > frameRect.width || stringSize.height > frameRect.height
+		return tooLarge
+	}
+
+	func maximumSizedFont() -> NSFont {
+		var resultFont = self.font ?? NSFont.monospacedDigitSystemFont(ofSize: 30.0, weight: NSFont.Weight.semibold)
+
+		while fontTooSmall(string: self.stringValue, font: resultFont, frameRect: self.frame) {
+			resultFont = NSFont.monospacedDigitSystemFont(ofSize: resultFont.pointSize + 1.0, weight: NSFont.Weight.semibold)
+		}
+
+		while fontTooLarge(string: self.stringValue, font: resultFont, frameRect: self.frame) {
+			resultFont = NSFont.monospacedDigitSystemFont(ofSize: resultFont.pointSize - 1.0, weight: NSFont.Weight.semibold)
+		}
+		return resultFont
 	}
 
 	deinit {
