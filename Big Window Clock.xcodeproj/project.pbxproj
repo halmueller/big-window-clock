@@ -465,7 +465,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilegeographics.Full-Screen-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilegeographics.bigWindowClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -485,7 +485,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobilegeographics.Full-Screen-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilegeographics.bigWindowClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
