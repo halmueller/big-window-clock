@@ -73,42 +73,14 @@ class ViewController: NSViewController {
 	}
 
 	func createNosleepAssert() {
-		logIOKitAssertions()
-		print("before assertionID \(assertionID)")
 		let reasonForActivity = "Big Window Clock disable sleep requested" as CFString
 		let sleepKey = kIOPMAssertionTypePreventUserIdleDisplaySleep as CFString
-		let assertionCreated = IOPMAssertionCreateWithName(sleepKey, IOPMAssertionLevel(kIOPMAssertionLevelOn), reasonForActivity, &assertionID)
-		print("assertionCreated \(assertionCreated)")
-		print("after assertionID \(assertionID)")
-		logIOKitAssertions()
+		_ = IOPMAssertionCreateWithName(sleepKey, IOPMAssertionLevel(kIOPMAssertionLevelOn), reasonForActivity, &assertionID)
 	}
 
 	func releaseNosleepAssert() {
-		logIOKitAssertions()
-		print(#function)
-
-		 IOPMAssertionRelease(assertionID)
+		IOPMAssertionRelease(assertionID)
 		assertionID = IOPMAssertionID(kIOPMNullAssertionID)
-/*
-		IOReturn success = IOPMAssertionRelease(_assertionID);
-		[self.statusField setStringValue:@"Assert OFF"];
-		NSLog(@"*** unlock: %d. success: %d", _assertionID, success);
-		_assertionID = kIOPMNullAssertionID;
-		[self logAssertions];
-
-*/
-		logIOKitAssertions()
-	}
-
-	func logIOKitAssertions() {
-		print(#function)
-/*
-		NSLog(@"\n_____________________\n");
-		NSDictionary* assertions = nil;
-		IOPMCopyAssertionsByProcess((CFDictionaryRef*)&assertions);
-		NSLog(@"%@", assertions);
-
-*/
 	}
 
 	override func viewDidLoad() {
