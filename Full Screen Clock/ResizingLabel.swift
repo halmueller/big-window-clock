@@ -29,7 +29,7 @@ class ResizingLabel: NSTextField {
 											   object: nil)
 	}
 
-	@objc func frameChanged(_ notification: Notification) {
+	@objc func frameChanged(_ notification: Notification?) {
 		font = maximumSizedFont()
 	}
 

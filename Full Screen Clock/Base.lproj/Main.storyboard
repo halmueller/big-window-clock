@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14111"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -222,8 +222,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HU8-tt-Rtb"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="16:00:00-0800" drawsBackground="YES" usesSingleLineMode="YES" id="VNW-Rw-TyD">
-                                    <dateFormatter key="formatter" formatterBehavior="custom10_4" timeStyle="medium" dateFormat="HH:mm:ssZ" id="Vmd-bx-Udp"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="16:00:00" drawsBackground="YES" usesSingleLineMode="YES" id="VNW-Rw-TyD">
+                                    <dateFormatter key="formatter" formatterBehavior="custom10_4" timeStyle="medium" dateFormat="HH:mm:ss" id="Vmd-bx-Udp"/>
                                     <font key="font" size="30" name=".AppleSystemUIFontMedium"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -264,6 +264,26 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-cY-hqJ">
+                                <rect key="frame" x="201" y="18" width="81" height="18"/>
+                                <buttonCell key="cell" type="check" title="Timezone" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="XR4-d4-H5n">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="toggleShowTimezone:" target="XfG-lQ-9wD" id="mdc-dR-dRF"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-Ax-ciq">
+                                <rect key="frame" x="286" y="18" width="103" height="18"/>
+                                <buttonCell key="cell" type="check" title="Disable sleep" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8Xc-Ti-Bsc">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="toggleDisableSleep:" target="XfG-lQ-9wD" id="lRc-Fs-yB2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="rut-Lc-9UJ" firstAttribute="leading" secondItem="BHW-rc-O9b" secondAttribute="trailing" constant="8" symbolic="YES" id="8b2-X8-skt"/>
@@ -271,16 +291,23 @@
                             <constraint firstAttribute="trailing" secondItem="bcW-4w-HUc" secondAttribute="trailing" constant="18" id="H8R-Pb-9jy"/>
                             <constraint firstAttribute="bottom" secondItem="BHW-rc-O9b" secondAttribute="bottom" constant="20" symbolic="YES" id="KNG-7P-GjI"/>
                             <constraint firstItem="bcW-4w-HUc" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="TNH-uy-PSu"/>
+                            <constraint firstItem="M6w-cY-hqJ" firstAttribute="baseline" secondItem="GRk-ac-lRI" secondAttribute="baseline" id="UyE-05-ebu"/>
                             <constraint firstItem="BHW-rc-O9b" firstAttribute="baseline" secondItem="rut-Lc-9UJ" secondAttribute="baseline" id="aHm-SQ-aOL"/>
                             <constraint firstItem="GRk-ac-lRI" firstAttribute="leading" secondItem="rut-Lc-9UJ" secondAttribute="trailing" constant="8" symbolic="YES" id="e5t-mz-r3R"/>
+                            <constraint firstItem="M6w-cY-hqJ" firstAttribute="baseline" secondItem="cGE-Ax-ciq" secondAttribute="baseline" id="gNm-1e-YZc"/>
                             <constraint firstItem="BHW-rc-O9b" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="h8N-qE-gu2"/>
                             <constraint firstItem="bcW-4w-HUc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="18" id="jYG-Xl-W1D"/>
+                            <constraint firstItem="cGE-Ax-ciq" firstAttribute="leading" secondItem="M6w-cY-hqJ" secondAttribute="trailing" constant="8" symbolic="YES" id="kbO-co-lpL"/>
                             <constraint firstItem="rut-Lc-9UJ" firstAttribute="top" secondItem="bcW-4w-HUc" secondAttribute="bottom" constant="11" id="nrz-QJ-f9p"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GRk-ac-lRI" secondAttribute="trailing" constant="20" symbolic="YES" id="oMS-gb-ETG"/>
+                            <constraint firstItem="M6w-cY-hqJ" firstAttribute="leading" secondItem="GRk-ac-lRI" secondAttribute="trailing" constant="8" symbolic="YES" id="uwR-RU-qTr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="clockLabel" destination="bcW-4w-HUc" id="1fx-6E-aHh"/>
+                        <outlet property="currentTimeFormatter" destination="Vmd-bx-Udp" id="R4J-wf-UQE"/>
+                        <outlet property="disbleSleepCheckbox" destination="cGE-Ax-ciq" id="wye-Rr-vgE"/>
+                        <outlet property="showTimezoneCheckbox" destination="M6w-cY-hqJ" id="GBg-di-7xD"/>
                         <outlet property="tickIntervalFormatter" destination="Iv4-qp-qsE" id="xa4-L0-0Go"/>
                     </connections>
                 </viewController>
