@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import IOKit.pwr_mgt
 
 class ViewController: NSViewController {
 
@@ -19,6 +20,8 @@ class ViewController: NSViewController {
 	var beepedSeconds = Int(Date().timeIntervalSinceReferenceDate)
 	// source: https://freesound.org/people/unfa/sounds/243748/ Creative Commons 0 License
 	let tickSound = NSSound(named: NSSound.Name(rawValue: "243748__unfa__metronome-2khz-strong-pulse"))!
+
+	var  assertionID = IOPMAssertionID(kIOPMNullAssertionID)
 
 	@objc func updateClock(timer: Timer) {
 		let currentTime = NSDate()
@@ -59,6 +62,53 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func toggleDisableSleep(_ sender: NSButton) {
+		let newShouldDisableSleep = !UserDefaults.standard.bool(forKey: "disableSleep")
+		UserDefaults.standard.set(newShouldDisableSleep, forKey: "disableSleep")
+		if newShouldDisableSleep {
+			createNosleepAssert()
+		}
+		else {
+			releaseNosleepAssert()
+		}
+	}
+
+	func createNosleepAssert() {
+		logIOKitAssertions()
+		print("before assertionID \(assertionID)")
+		let reasonForActivity = "Big Window Clock disable sleep requested" as CFString
+		let sleepKey = kIOPMAssertionTypePreventUserIdleDisplaySleep as CFString
+		let assertionCreated = IOPMAssertionCreateWithName(sleepKey, IOPMAssertionLevel(kIOPMAssertionLevelOn), reasonForActivity, &assertionID)
+		print("assertionCreated \(assertionCreated)")
+		print("after assertionID \(assertionID)")
+		logIOKitAssertions()
+	}
+
+	func releaseNosleepAssert() {
+		logIOKitAssertions()
+		print(#function)
+
+		 IOPMAssertionRelease(assertionID)
+		assertionID = IOPMAssertionID(kIOPMNullAssertionID)
+/*
+		IOReturn success = IOPMAssertionRelease(_assertionID);
+		[self.statusField setStringValue:@"Assert OFF"];
+		NSLog(@"*** unlock: %d. success: %d", _assertionID, success);
+		_assertionID = kIOPMNullAssertionID;
+		[self logAssertions];
+
+*/
+		logIOKitAssertions()
+	}
+
+	func logIOKitAssertions() {
+		print(#function)
+/*
+		NSLog(@"\n_____________________\n");
+		NSDictionary* assertions = nil;
+		IOPMCopyAssertionsByProcess((CFDictionaryRef*)&assertions);
+		NSLog(@"%@", assertions);
+
+*/
 	}
 
 	override func viewDidLoad() {
@@ -68,7 +118,13 @@ class ViewController: NSViewController {
 												  "showTimezone" : false,
 												  "disableSleep" : true])
 		configureTimeFormatter()
-		configureSleepDisable()
+		if UserDefaults.standard.bool(forKey: "disableSleep") {
+			createNosleepAssert()
+			disbleSleepCheckbox.state = .on
+		}
+		else {
+			disbleSleepCheckbox.state = .off
+		}
 		if UserDefaults.standard.bool(forKey: "showTimezone") {
 			showTimezoneCheckbox.state = .on
 		} else {
