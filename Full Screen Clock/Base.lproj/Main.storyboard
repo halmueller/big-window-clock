@@ -217,7 +217,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="109"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" placeholderIntrinsicWidth="444" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="bcW-4w-HUc" customClass="ResizingLabel" customModule="Big_Window_Clock" customModuleProvider="target">
+                            <textField toolTip="Does anybody really know what time it is? Does anybody really care?" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" placeholderIntrinsicWidth="444" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="bcW-4w-HUc" customClass="ResizingLabel" customModule="Big_Window_Clock" customModuleProvider="target">
                                 <rect key="frame" x="18" y="49" width="444" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HU8-tt-Rtb"/>
@@ -229,7 +229,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BHW-rc-O9b">
+                            <button toolTip="Play a &quot;tick&quot; sound periodically." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BHW-rc-O9b">
                                 <rect key="frame" x="18" y="18" width="85" height="18"/>
                                 <buttonCell key="cell" type="check" title="Tick every" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Qvt-zd-AOd">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -239,7 +239,7 @@
                                     <binding destination="dw1-Pg-DBe" name="value" keyPath="values.shouldTick" id="b9N-Pa-RRf"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rut-Lc-9UJ">
+                            <textField toolTip="How often to play the &quot;tick&quot; sound?" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rut-Lc-9UJ">
                                 <rect key="frame" x="109" y="16" width="26" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="N7Y-dC-Ktf"/>
@@ -264,7 +264,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-cY-hqJ">
+                            <button toolTip="Show the local timezone, or not." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-cY-hqJ">
                                 <rect key="frame" x="201" y="18" width="81" height="18"/>
                                 <buttonCell key="cell" type="check" title="Timezone" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="XR4-d4-H5n">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -274,7 +274,7 @@
                                     <action selector="toggleShowTimezone:" target="XfG-lQ-9wD" id="mdc-dR-dRF"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-Ax-ciq">
+                            <button toolTip="Prevent the system from going to sleep when idle. This will drain your battery." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-Ax-ciq">
                                 <rect key="frame" x="286" y="18" width="103" height="18"/>
                                 <buttonCell key="cell" type="check" title="Disable sleep" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8Xc-Ti-Bsc">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
