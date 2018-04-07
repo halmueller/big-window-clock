@@ -290,6 +290,7 @@
                             <constraint firstItem="rut-Lc-9UJ" firstAttribute="baseline" secondItem="GRk-ac-lRI" secondAttribute="baseline" id="CFl-Nx-YZx"/>
                             <constraint firstAttribute="trailing" secondItem="bcW-4w-HUc" secondAttribute="trailing" constant="18" id="H8R-Pb-9jy"/>
                             <constraint firstAttribute="bottom" secondItem="BHW-rc-O9b" secondAttribute="bottom" constant="20" symbolic="YES" id="KNG-7P-GjI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cGE-Ax-ciq" secondAttribute="trailing" constant="20" symbolic="YES" id="KW8-dT-ekj"/>
                             <constraint firstItem="bcW-4w-HUc" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="TNH-uy-PSu"/>
                             <constraint firstItem="M6w-cY-hqJ" firstAttribute="baseline" secondItem="GRk-ac-lRI" secondAttribute="baseline" id="UyE-05-ebu"/>
                             <constraint firstItem="BHW-rc-O9b" firstAttribute="baseline" secondItem="rut-Lc-9UJ" secondAttribute="baseline" id="aHm-SQ-aOL"/>
