@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0A2DB3207ACE6B00A30780 /* Big Window Clock.help in Resources */ = {isa = PBXBuildFile; fileRef = 2B0A2DB2207ACE6B00A30780 /* Big Window Clock.help */; };
 		2B3253FF2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */; };
 		2B3254052076F40A00C68AA8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2B3254042076F40A00C68AA8 /* Credits.rtf */; };
 		2BCD0B602075E1B700EED20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD0B5F2075E1B700EED20D /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B0A2DB2207ACE6B00A30780 /* Big Window Clock.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Big Window Clock.help"; sourceTree = "<group>"; };
 		2B3253C0207698C600C68AA8 /* Full Screen Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Full Screen Clock.entitlements"; sourceTree = "<group>"; };
 		2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "243748__unfa__metronome-2khz-strong-pulse.mp3"; sourceTree = "<group>"; };
 		2B3254042076F40A00C68AA8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				2BCD0B8B2075E49F00EED20D /* ResizingLabel.swift */,
 				2B3253FE2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 */,
 				2BCD0B682075E1BA00EED20D /* Info.plist */,
+				2B0A2DB2207ACE6B00A30780 /* Big Window Clock.help */,
 			);
 			path = "Full Screen Clock";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BCD0B642075E1BA00EED20D /* Assets.xcassets in Resources */,
+				2B0A2DB3207ACE6B00A30780 /* Big Window Clock.help in Resources */,
 				2BCD0B672075E1BA00EED20D /* Main.storyboard in Resources */,
 				2B3253FF2076DEAB00C68AA8 /* 243748__unfa__metronome-2khz-strong-pulse.mp3 in Resources */,
 				2B3254052076F40A00C68AA8 /* Credits.rtf in Resources */,

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PTHHelpBook bundleVersion="6" schemaVersion="2">
+    <lastGenerate url="/Users/hal/DevelopmentSandbox/Full Screen Clock/Full Screen Clock/Big Window Clock.help" bookmark="Ym9va/QCAAAAAAQQMAAAAET3BIUam0Jxqwe+39RNN/nkcRckzOV5OhKJRKhZ6/9u8AEAAAQAAAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAADAAAAAQEAAGhhbAASAAAAAQEAAERldmVsb3BtZW50U2FuZGJveAAAEQAAAAEBAABGdWxsIFNjcmVlbiBDbG9jawAAAAkAAAABAQAASGVscC5oZWxwAAAAFAAAAAEGAAAQAAAAIAAAACwAAABIAAAAZAAAAAgAAAAEAwAAdWkGAAAAAAAIAAAABAMAABM5CwAAAAAACAAAAAQDAAC0sQ0AAAAAAAgAAAAEAwAAHKN1AQIAAAAIAAAABAMAANhWgAECAAAAFAAAAAEGAACUAAAApAAAALQAAADEAAAA1AAAAAgAAAAABAAAQcA9Y3TIqNkYAAAAAQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPYBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAADgAePoAAAACAAAAAAEAABBvwShFwAAACQAAAABAQAAMzY4MEE0MEUtRjMwNS0zQzE3LUJBMkMtNTEwQ0ZBRTE2MEFDGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAAAAAAAAAQAAAABBAAAHgAAAAAAAAABRAAAOQAAAAAAAAAEBAAABABAAAAAAAAQBAAAAABAAAAAAAAAiAAANwBAAAAAAAABSAAAEwBAAAAAAAAECAAAFwBAAAAAAAAESAAAJABAAAAAAAAEiAAAHABAAAAAAAAEyAAAIABAAAAAAAAICAAALwBAAAAAAAAMCAAAOgBAAAAAAAAAcAAADABAAAAAAAAEcAAACAAAAAAAAAAEsAAAEABAAAAAAAAENAAAAQAAAAAAAAA"></lastGenerate>
+    <bookName>AppName Help</bookName>
+    <bundleId>com.mobilegeographics.bigWindowClock.help</bundleId>
+    <author>
+        <name>Hal Mueller</name>
+        <email>hal@mobilegeographics.com</email>
+        <company>Mobile Geographics</company>
+        <website>https://www.mobilegeographics.com</website>
+    </author>
+    <bundleIconId>Images</bundleIconId>
+    <htmlOutputPath></htmlOutputPath>
+    <locales>
+        <locale isActive="1" localeId="en">
+            <helpTitle>Big Window Clock Help</helpTitle>
+        </locale>
+    </locales>
+    <textElements></textElements>
+    <header enableForHelp="0" enableForPrint="0">
+        <contents>
+            <line Style="Heading1" Align="Left">
+                <image height="0.0" style="Heading1" leftMargin="0.0" bottomMargin="0.0" rightMargin="0.0" width="0.0" topMargin="0.0" imageId=""></image>
+                <textElement style="Heading1" textId="PageTitle"></textElement>
+            </line>
+        </contents>
+    </header>
+    <footer enableForHelp="0" enableForPrint="0">
+        <contents></contents>
+    </footer>
+    <images>
+        <image imageId="Images" dateAdded="2018-04-08T22:02:58Z" dateModified="2018-04-08T22:02:58Z" originalUrl="/Users/hal/DevelopmentSandbox/Full Screen Clock/Full Screen Clock/Help.pchelp/Images/Images" bookmark="Ym9va0wDAAAAAAQQMAAAAITCE2dvNmdXth9FbUo8EIv4tkwfL9ZTaYLMvk+dKCf2SAIAAAQAAAADAwAAABgAKAUAAAABAQAAVXNlcnMAAAADAAAAAQEAAGhhbAASAAAAAQEAAERldmVsb3BtZW50U2FuZGJveAAAEQAAAAEBAABGdWxsIFNjcmVlbiBDbG9jawAAAAsAAAABAQAASGVscC5wY2hlbHAABgAAAAEBAABJbWFnZXMAACAAAAABBgAAEAAAACAAAAAsAAAASAAAAEgAAABkAAAAeAAAAHgAAAAIAAAABAMAAHVpBgAAAAAACAAAAAQDAAATOQsAAAAAAAgAAAAEAwAAtLENAAAAAAAIAAAABAMAAByjdQECAAAACAAAAAQDAAAfo3UBAgAAAAgAAAAEAwAAUlyAAQIAAAAIAAAABAMAAFZcgAECAAAACAAAAAQDAABXXIABAgAAACAAAAABBgAAsAAAAMAAAADQAAAA4AAAAPAAAAAAAQAAEAEAACABAAAIAAAAAAQAAEHAPWRRkVeTGAAAAAECAAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAYAAAAAAAAABAAAAAMDAAD2AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAA4AHj6AAAAAgAAAAABAAAQb8EoRcAAAAkAAAAAQEAADM2ODBBNDBFLUYzMDUtM0MxNy1CQTJDLTUxMENGQUUxNjBBQxgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAAAAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAACIAAAAAAAAAAUQAAAwAQAAAAAAABAQAABoAQAAAAAAAEAQAABYAQAAAAAAAAIgAAA0AgAAAAAAAAUgAACkAQAAAAAAABAgAAC0AQAAAAAAABEgAADoAQAAAAAAABIgAADIAQAAAAAAABMgAADYAQAAAAAAACAgAAAUAgAAAAAAADAgAABAAgAAAAAAAAHAAACIAQAAAAAAABHAAAAgAAAAAAAAABLAAACYAQAAAAAAABDQAAAEAAAAAAAAAA=="></image>
+    </images>
+    <pages>
+        <page pageId="Page0" anchorTarget="Page0"></page>
+    </pages>
+    <styles>
+        <style name="Normal" paragraphSpacing="1.5">
+            <font name="HelveticaNeue" size="12" color="RGBA(58,58,58,1.000000)"></font>
+        </style>
+        <style name="Heading1" paragraphSpacing="1.5">
+            <font name="HelveticaNeue-Light" size="27" color="RGBA(58,58,58,1.000000)"></font>
+            <border-bottom width="1" color="RGBA(58,58,58,1.000000)"></border-bottom>
+        </style>
+        <style name="Heading2" paragraphSpacing="1.5">
+            <font name="HelveticaNeue" size="16" color="RGBA(58,58,58,1.000000)"></font>
+        </style>
+        <style paragraphSpacing="1" name="Custom" OriginalStyle="Normal" CustomStyle="1">
+            <font name="Helvetica" size="12" color="RGBA(0,0,0,1.000000)"></font>
+        </style>
+    </styles>
+</PTHHelpBook>

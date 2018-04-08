@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page pageId="Page0" pageName="Usage" title="">
+    <abstract></abstract>
+    <keywords></keywords>
+    <contents>
+        <line Align="Left">
+            <content style="Normal">Use the checkboxes to enable or disable the tick sound, timezone display, and whether Big Window Clock will stop your Mac from going to sleep. To measure sync drift over a long interval, you’ll probably want to set the tick interval to 5 to 15 seconds, so you can more easily tell whether audio or video is moving faster.</content>
+        </line>
+        <line Align="Left">
+            <content style="Normal"></content>
+        </line>
+        <line Align="Left">
+            <content style="Normal">Source code is available on Github: </content>
+            <content style="Custom" linkTarget="https://github.com/halmueller/big-window-clock">https://github.com/halmueller/big-window-clock</content>
+            <content style="Custom">.</content>
+        </line>
+    </contents>
+</page>
