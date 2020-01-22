@@ -34,13 +34,13 @@ class ResizingLabel: NSTextField {
 	}
 
 	func fontTooSmall(string: String, font: NSFont, frameRect: NSRect) -> Bool {
-		let stringSize = string.size(withAttributes: [NSAttributedStringKey.font: font])
+		let stringSize = string.size(withAttributes: [NSAttributedString.Key.font: font])
 		let tooSmall = stringSize.width < frameRect.width && stringSize.height < frameRect.height
 		return tooSmall
 	}
 
 	func fontTooLarge(string: String, font: NSFont, frameRect: NSRect) -> Bool {
-		let stringSize = string.size(withAttributes: [NSAttributedStringKey.font: font])
+		let stringSize = string.size(withAttributes: [NSAttributedString.Key.font: font])
 		let tooLarge = stringSize.width >= frameRect.width || stringSize.height >= frameRect.height
 		return tooLarge
 	}

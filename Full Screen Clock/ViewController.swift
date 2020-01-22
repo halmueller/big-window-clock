@@ -19,7 +19,7 @@ class ViewController: NSViewController {
 
 	var beepedSeconds = Int(Date().timeIntervalSinceReferenceDate)
 	// source: https://freesound.org/people/unfa/sounds/243748/ Creative Commons 0 License
-	let tickSound = NSSound(named: NSSound.Name(rawValue: "243748__unfa__metronome-2khz-strong-pulse"))!
+	let tickSound = NSSound(named: "243748__unfa__metronome-2khz-strong-pulse")!
 
 	var  assertionID = IOPMAssertionID(kIOPMNullAssertionID)
 
