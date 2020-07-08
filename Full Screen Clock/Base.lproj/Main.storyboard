@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17132.0.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17132.0.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -214,11 +214,11 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="XfG-lQ-9wD" customClass="ViewController" customModule="Big_Window_Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="109"/>
+                        <rect key="frame" x="0.0" y="0.0" width="484" height="109"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField toolTip="Does anybody really know what time it is? Does anybody really care?" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" placeholderIntrinsicWidth="444" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="bcW-4w-HUc" customClass="ResizingLabel" customModule="Big_Window_Clock" customModuleProvider="target">
-                                <rect key="frame" x="18" y="48" width="444" height="41"/>
+                                <rect key="frame" x="18" y="49" width="448" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HU8-tt-Rtb"/>
                                 </constraints>
@@ -230,7 +230,7 @@
                                 </textFieldCell>
                             </textField>
                             <button toolTip="Play a &quot;tick&quot; sound periodically." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BHW-rc-O9b">
-                                <rect key="frame" x="18" y="18" width="85" height="18"/>
+                                <rect key="frame" x="18" y="19" width="89" height="18"/>
                                 <buttonCell key="cell" type="check" title="Tick every" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Qvt-zd-AOd">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -240,7 +240,7 @@
                                 </connections>
                             </button>
                             <textField toolTip="How often to play the &quot;tick&quot; sound?" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rut-Lc-9UJ">
-                                <rect key="frame" x="109" y="16" width="26" height="21"/>
+                                <rect key="frame" x="115" y="17" width="26" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="N7Y-dC-Ktf"/>
                                 </constraints>
@@ -257,7 +257,7 @@
                                 </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GRk-ac-lRI">
-                                <rect key="frame" x="141" y="19" width="56" height="16"/>
+                                <rect key="frame" x="147" y="20" width="56" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="up0-gp-v6j">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -265,7 +265,7 @@
                                 </textFieldCell>
                             </textField>
                             <button toolTip="Show the local timezone, or not." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-cY-hqJ">
-                                <rect key="frame" x="201" y="18" width="82" height="18"/>
+                                <rect key="frame" x="207" y="19" width="85" height="18"/>
                                 <buttonCell key="cell" type="check" title="Timezone" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="XR4-d4-H5n">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -274,8 +274,8 @@
                                     <action selector="toggleShowTimezone:" target="XfG-lQ-9wD" id="mdc-dR-dRF"/>
                                 </connections>
                             </button>
-                            <button toolTip="Prevent the system from going to sleep when idle. This will drain your battery." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-Ax-ciq">
-                                <rect key="frame" x="287" y="18" width="103" height="18"/>
+                            <button toolTip="Prevent the system from going to sleep when idle. This will drain your battery." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-Ax-ciq" userLabel="Disable Sleep Checkbox">
+                                <rect key="frame" x="298" y="19" width="107" height="18"/>
                                 <buttonCell key="cell" type="check" title="Disable sleep" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8Xc-Ti-Bsc">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -284,21 +284,33 @@
                                     <action selector="toggleDisableSleep:" target="XfG-lQ-9wD" id="lRc-Fs-yB2"/>
                                 </connections>
                             </button>
+                            <button toolTip="Prevent the system from going to sleep when idle. This will drain your battery." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="me2-ld-e6S">
+                                <rect key="frame" x="411" y="19" width="53" height="18"/>
+                                <buttonCell key="cell" type="check" title="UTC" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="5Bo-Ga-VXh">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="toggleUseUTC:" target="XfG-lQ-9wD" id="FOt-VI-e0e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="rut-Lc-9UJ" firstAttribute="leading" secondItem="BHW-rc-O9b" secondAttribute="trailing" constant="8" symbolic="YES" id="8b2-X8-skt"/>
                             <constraint firstItem="rut-Lc-9UJ" firstAttribute="baseline" secondItem="GRk-ac-lRI" secondAttribute="baseline" id="CFl-Nx-YZx"/>
+                            <constraint firstItem="me2-ld-e6S" firstAttribute="firstBaseline" secondItem="cGE-Ax-ciq" secondAttribute="firstBaseline" id="E0m-CH-zn9"/>
                             <constraint firstAttribute="trailing" secondItem="bcW-4w-HUc" secondAttribute="trailing" constant="18" id="H8R-Pb-9jy"/>
                             <constraint firstAttribute="bottom" secondItem="BHW-rc-O9b" secondAttribute="bottom" constant="20" symbolic="YES" id="KNG-7P-GjI"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cGE-Ax-ciq" secondAttribute="trailing" constant="20" symbolic="YES" id="KW8-dT-ekj"/>
                             <constraint firstItem="bcW-4w-HUc" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="TNH-uy-PSu"/>
                             <constraint firstItem="M6w-cY-hqJ" firstAttribute="baseline" secondItem="GRk-ac-lRI" secondAttribute="baseline" id="UyE-05-ebu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="me2-ld-e6S" secondAttribute="trailing" constant="20" symbolic="YES" id="WSY-Iq-v00"/>
                             <constraint firstItem="BHW-rc-O9b" firstAttribute="baseline" secondItem="rut-Lc-9UJ" secondAttribute="baseline" id="aHm-SQ-aOL"/>
                             <constraint firstItem="GRk-ac-lRI" firstAttribute="leading" secondItem="rut-Lc-9UJ" secondAttribute="trailing" constant="8" symbolic="YES" id="e5t-mz-r3R"/>
                             <constraint firstItem="M6w-cY-hqJ" firstAttribute="baseline" secondItem="cGE-Ax-ciq" secondAttribute="baseline" id="gNm-1e-YZc"/>
                             <constraint firstItem="BHW-rc-O9b" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="h8N-qE-gu2"/>
                             <constraint firstItem="bcW-4w-HUc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="18" id="jYG-Xl-W1D"/>
                             <constraint firstItem="cGE-Ax-ciq" firstAttribute="leading" secondItem="M6w-cY-hqJ" secondAttribute="trailing" constant="8" symbolic="YES" id="kbO-co-lpL"/>
+                            <constraint firstItem="me2-ld-e6S" firstAttribute="leading" secondItem="cGE-Ax-ciq" secondAttribute="trailing" constant="8" symbolic="YES" id="lrX-eA-30P"/>
                             <constraint firstItem="rut-Lc-9UJ" firstAttribute="top" secondItem="bcW-4w-HUc" secondAttribute="bottom" constant="11" id="nrz-QJ-f9p"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GRk-ac-lRI" secondAttribute="trailing" constant="20" symbolic="YES" id="oMS-gb-ETG"/>
                             <constraint firstItem="M6w-cY-hqJ" firstAttribute="leading" secondItem="GRk-ac-lRI" secondAttribute="trailing" constant="8" symbolic="YES" id="uwR-RU-qTr"/>
@@ -310,6 +322,7 @@
                         <outlet property="disbleSleepCheckbox" destination="cGE-Ax-ciq" id="wye-Rr-vgE"/>
                         <outlet property="showTimezoneCheckbox" destination="M6w-cY-hqJ" id="GBg-di-7xD"/>
                         <outlet property="tickIntervalFormatter" destination="Iv4-qp-qsE" id="xa4-L0-0Go"/>
+                        <outlet property="useUTCCheckbox" destination="me2-ld-e6S" id="trN-p3-b9e"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

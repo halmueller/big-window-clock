@@ -16,6 +16,7 @@ class ViewController: NSViewController {
 	@IBOutlet weak var currentTimeFormatter: DateFormatter!
 	@IBOutlet weak var showTimezoneCheckbox: NSButton!
 	@IBOutlet weak var disbleSleepCheckbox: NSButton!
+    @IBOutlet weak var useUTCCheckbox: NSButton!
 
 	var beepedSeconds = Int(Date().timeIntervalSinceReferenceDate)
 	// source: https://freesound.org/people/unfa/sounds/243748/ Creative Commons 0 License
@@ -38,16 +39,28 @@ class ViewController: NSViewController {
 		}
 	}
 
-	func configureTimeFormatter() {
-		if UserDefaults.standard.bool(forKey: "showTimezone") {
-			currentTimeFormatter.dateFormat = "HH:mm:ssZ"
-		}
-		else {
-			currentTimeFormatter.dateFormat = "HH:mm:ss"
-		}
-		self.clockLabel.frameChanged(nil)
-	}
-
+    func configureTimeFormatter() {
+        if UserDefaults.standard.bool(forKey: "useUTC") {
+            currentTimeFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+            if UserDefaults.standard.bool(forKey: "showTimezone") {
+                currentTimeFormatter.dateFormat = "HH:mm:ss'Z'"
+            }
+            else {
+                currentTimeFormatter.dateFormat = "HH:mm:ss"
+            }
+        }
+        else {
+            currentTimeFormatter.timeZone = TimeZone.current
+            if UserDefaults.standard.bool(forKey: "showTimezone") {
+                currentTimeFormatter.dateFormat = "HH:mm:ssZ"
+            }
+            else {
+                currentTimeFormatter.dateFormat = "HH:mm:ss"
+            }
+        }
+        self.clockLabel.frameChanged(nil)
+    }
+    
 	func configureSleepDisable() {
 		if UserDefaults.standard.bool(forKey: "disableSleep") {
 		}
@@ -56,11 +69,18 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func toggleShowTimezone(_ sender: NSButton) {
-		let currentValue = UserDefaults.standard.bool(forKey: "showTimezone")
-		UserDefaults.standard.set(!currentValue, forKey: "showTimezone")
-		configureTimeFormatter()
+        let currentValue = UserDefaults.standard.bool(forKey: "showTimezone")
+        UserDefaults.standard.set(!currentValue, forKey: "showTimezone")
+        configureTimeFormatter()
 	}
 
+    @IBAction func toggleUseUTC(_ sender: NSButton) {
+        let currentValue = UserDefaults.standard.bool(forKey: "useUTC")
+        UserDefaults.standard.set(!currentValue, forKey: "useUTC")
+        configureTimeFormatter()
+    }
+    
+    
 	@IBAction func toggleDisableSleep(_ sender: NSButton) {
 		let newShouldDisableSleep = !UserDefaults.standard.bool(forKey: "disableSleep")
 		UserDefaults.standard.set(newShouldDisableSleep, forKey: "disableSleep")
@@ -102,6 +122,11 @@ class ViewController: NSViewController {
 		} else {
 			showTimezoneCheckbox.state = .off
 		}
+        if UserDefaults.standard.bool(forKey: "useUTC") {
+            useUTCCheckbox.state = .on
+        } else {
+            useUTCCheckbox.state = .off
+        }
 		if let existingFont = clockLabel.font {
 			clockLabel.font = NSFont.monospacedDigitSystemFont(ofSize: existingFont.pointSize, weight:NSFont.Weight.regular)
 		}
