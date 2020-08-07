@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Full_Screen_Clock
+@testable import Big_Window_Clock
 
 class Full_Screen_ClockTests: XCTestCase {
     
